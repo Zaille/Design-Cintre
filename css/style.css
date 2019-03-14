@@ -1,42 +1,118 @@
 header {
-    width:auto;
-    height:auto;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    width: 100%;
 }
 
-.cintre_logo {
-    padding: 7px 15px;
-    display: block;
-    float: left;
+#div_logo_header {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#div_logo_header h1 {
+    margin: 0;
+}
+
+#div_logo_header img {
     height: 50px;
+    padding-top: 5px;
+    padding-left: 25px;
 }
 
-.nav_head {
-    vertical-align: top;
-    font-family: 'Montserrat', sans-serif;
+#div_nav_header {
     text-align: right;
+    grid-column: 2 / 5;
+    grid-row: 1;
 }
 
-.ul_head {
-    list-style:none;
-    float: right;
+#div_search_icon {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    background-color: #2C9935;
+    width: 64px;
+    margin-left: 110px;
+}
+
+#div_search_icon img {
+    padding: 15px;
+    height: 30px;
+}
+
+#nav_head {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+}
+
+#ul_head {
+    list-style: none;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
-li {
+.li_nav {
     color: #3CA945;
+    padding: 22px 25px;
+    font-size: 1em;
+    font-weight: bold;
     display: inline-block;
-    width: auto;
-    padding: 15px 10px;
-    transition: background-color 0.3s
+    transition: .3s
 }
 
-li:hover {
+.li_nav a {
+    text-decoration: none;
+    color: #3CA945;
+}
+
+.li_nav:hover {
     background-color: #3CA945;
     color: white;
 }
 
 body {
     margin: 0;
+}
+
+#ul_head, #ul_head ul{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+#ul_head li{
+    position:relative;
+}
+
+#ul_head ul{
+    width: 300px;
+    text-align: left;
+    position:absolute;
+    z-index: 1000;
+    max-height:0;
+    left: 0;
+    margin-top: 22px;
+    overflow:hidden;
+    transition: .5s all .3s
+}
+#ul_head li:hover ul{
+    max-height: 30em;
+}
+
+#ul_head li li{
+    background:#2C9935;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 25px;
+}
+
+#ul_head li li:hover{
+    background:#4CB955;
+    font-size: 13px;
+}
+
+#ul_head li:hover a, #ul_head li li:hover a{
+    color:white;
 }
