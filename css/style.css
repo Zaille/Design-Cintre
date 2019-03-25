@@ -4,7 +4,9 @@ header {
 	grid-template-rows: auto;
 	width: 100%;
 }
-
+* {
+	box-sizing: border-box;
+}
 #div_logo_header {
 	grid-column: 1;
 	grid-row: 1;
@@ -105,8 +107,7 @@ body {
 	background: #2C9935;
 	font-size: 12px;
 	font-weight: bold;
-	padding: 10px;
-	padding-left: 25px;
+	padding: 10px 10px 10px 25px;
 }
 
 #ul_head li li:hover {
@@ -119,5 +120,98 @@ body {
 }
 
 .back-green {
-	background: #4CB955; !important;
+	background: #4CB955;
+!important;
 }
+
+.grid {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	margin: 0 0 1.875em 0;
+}
+.grid.element:hover {
+	margin: -6.25em 0 0 0;
+}
+
+.grid  a {
+	text-decoration: none;
+}
+
+
+.grid figure .wrap_cat, .grid .figure .wrap_cat {
+	margin: .625em 0 .375rem 0;
+}
+.grid figure .titre, .grid .figure .titre {
+	text-transform: uppercase;
+	cursor: pointer;
+	min-height: auto;
+	color: #043964;
+	font-size: 1.071em;
+	font-family: semiBold;
+}
+.grid figure .wrap_cat, .grid .figure .wrap_cat {
+	margin: .625em 0 .375rem 0;
+}
+.grid figure figcaption, .grid .figure figcaption, .grid figure .figcaption, .grid .figure .figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 30%;
+	margin: 0;
+	-webkit-transition: all .35s ease-in-out 0s;
+	-moz-transition: all .35s ease-in-out 0s;
+	-ms-transition: all .35s ease-in-out 0s;
+	-o-transition: all .35s ease-in-out 0s;
+	transition: all .35s ease-in-out 0s;
+}
+
+.grid figure, .grid .figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 0 0 1.563rem 0;
+	width: 30%;
+	height: 18em;
+	background: #fff;
+}
+
+.grid figure, .grid .figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 0 0 1.563rem 0;
+	width: 30%;
+	height: 18em;
+	background: #fff;
+}
+
+.grid figure p, .grid .figure p {
+	margin: 0;
+	position: relative;
+	bottom: 0;
+	left: 0;
+	background: white;
+	width: 100%;
+	color: #4f7492;
+	padding: 0 5%;
+	font-size: 0.85em;
+}
+.grid figure .bodytexte, .grid .figure .bodytexte {
+	 margin: .8129999999999999rem 0 0 0;
+	 overflow: hidden;
+	 opacity: 0;
+	 -webkit-transition: all .35s ease-in-out 0s;
+	 -moz-transition: all .35s ease-in-out 0s;
+	 -ms-transition: all .35s ease-in-out 0s;
+	 -o-transition: all .35s ease-in-out 0s;
+	 transition: all .35s ease-in-out 0s;
+ }
+.grid figure img {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
