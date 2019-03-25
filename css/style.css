@@ -201,10 +201,14 @@ h1 {
 !important;
 }
 
+a:hover{
+	color: slategrey; !important;
+}
 .grid {
 	position: relative;
 	display: inline-block;
 	width: 100%;
+	font-size: 13px; !important;
 	margin: 0 0 1.875em 0;
 }
 .grid.element:hover {
@@ -249,7 +253,7 @@ h1 {
 	float: left;
 	overflow: hidden;
 	margin: 0 0 1.563rem 0;
-	width: 30%;
+	width: 100px;
 	height: 18em;
 	background: #fff;
 }
@@ -281,7 +285,6 @@ h1 {
 	 opacity: 0;
 	 -webkit-transition: all .35s ease-in-out 0s;
 	 -moz-transition: all .35s ease-in-out 0s;
-	 -ms-transition: all .35s ease-in-out 0s;
 	 -o-transition: all .35s ease-in-out 0s;
 	 transition: all .35s ease-in-out 0s;
  }
@@ -292,3 +295,15 @@ h1 {
 	height: auto;
 }
 
+.floating-buttons {
+	position: fixed;
+	right: 20px;
+
+	text-align: center;
+	overflow: visible;
+
+}
+
+.button-sharing_button:focus, .button-sharing_button:hover, .button-sharing:focus .button-sharing_button, .button-sharing:hover .button-sharing_button {
+	background: #4CB955;
+}

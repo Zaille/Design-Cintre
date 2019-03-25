@@ -1,279 +1,284 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/leaflet.css">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+	<link rel="stylesheet" type="text/css" href="css/leaflet.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <script type="text/javascript" src="http://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-    <title>Ville de Cintré</title>
+	<script
+			src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+			integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+			crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+	<title>Ville de Cintré</title>
 </head>
 <body>
 <header role="banner" class="rheader fixed">
-    <div class="rheader-wrapper">
-        <div class="rheader-wrapper"><a id="logo" href="index.html" title="Retour à l'accueil - Cintré"
-                                        class="rheader-logo"><h1 class="rheader-logo-cintre">Cintré</h1></a>
-            <a href="https://www.google.com/" title="Rechercher sur ville-cintre.fr"
-               aria-controls="rheader-search" role="button" class="rheader-button rheader-button-search">
-                <i class="rheader-button-icon icon-search-v2"><span class="ui-icon ui-icon-search"></span></i>
-            </a><!-- @whitespace
+	<div class="rheader-wrapper">
+		<div class="rheader-wrapper"><a id="logo" href="index.html" title="Retour à l'accueil - Cintré"
+										class="rheader-logo"><h1 class="rheader-logo-cintre">Cintré</h1></a>
+			<a href="https://www.google.com/" title="Rechercher sur ville-cintre.fr"
+			   aria-controls="rheader-search" role="button" class="rheader-button rheader-button-search">
+				<i class="rheader-button-icon icon-search-v2"><span class="ui-icon ui-icon-search"></span></i>
+			</a><!-- @whitespace
              --><nav id="navigation" tabindex="-1" role="navigation" class="rheader-nav">
-                <ul>
-                    <li class="rheader-nav-item"><a href="http://www.ville-cintre.fr/presentation.asp"><span
-                            class="rheader-nav-item-text">La commune</span></a></li><!-- @whitespace
+				<ul>
+					<li class="rheader-nav-item"><a href="http://www.ville-cintre.fr/presentation.asp"><span
+							class="rheader-nav-item-text">La commune</span></a></li><!-- @whitespace
                  --><li class="rheader-nav-item"><a href="http://www.ville-cintre.fr/service-peri-scolaire.asp"><span
-                            class="rheader-nav-item-text">La vie au quotidien</span></a></li><!-- @whitespace
+							class="rheader-nav-item-text">La vie au quotidien</span></a></li><!-- @whitespace
                  --><li class="rheader-nav-item"><a href="http://www.ville-cintre.fr/associations.asp"><span
-                            class="rheader-nav-item-text">Culture, sports, loisirs</span></a></li><!-- @whitespace
+							class="rheader-nav-item-text">Culture, sports, loisirs</span></a></li><!-- @whitespace
                  --><li class="rheader-nav-item"><a href="http://www.ville-cintre.fr/commerces.asp"><span
-                            class="rheader-nav-item-text">Économie / Emploi</span></a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+							class="rheader-nav-item-text">Économie / Emploi</span></a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
 </header>
 <div id="monCarousel" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#monCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#monCarousel" data-slide-to="1"></li>
-        <li data-target="#monCarousel" data-slide-to="2"></li>
-        <li data-target="#monCarousel" data-slide-to="3"></li>
-        <li data-target="#monCarousel" data-slide-to="4"></li>
-        <li data-target="#monCarousel" data-slide-to="5"></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img class="d-block w-30 mx-auto " src="img/2-La_grange.JPG" alt="First slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-30 mx-auto" src="img/IMG_6040.JPG" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-30 mx-auto" src="img/IMG_6043.JPG" alt="Third slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-30 mx-auto" src="img/IMG_6045.JPG" alt="Third slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-30 mx-auto" src="img/IMG_6046.JPG" alt="Third slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-30 mx-auto" src="img/IMG_6056.JPG" alt="Third slide">
-        </div>
-    </div>
-    <a class="carousel-control-prev" href="#monCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#monCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
+	<ol class="carousel-indicators">
+		<li data-target="#monCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#monCarousel" data-slide-to="1"></li>
+		<li data-target="#monCarousel" data-slide-to="2"></li>
+		<li data-target="#monCarousel" data-slide-to="3"></li>
+		<li data-target="#monCarousel" data-slide-to="4"></li>
+		<li data-target="#monCarousel" data-slide-to="5"></li>
+	</ol>
+	<div class="carousel-inner">
+		<div class="carousel-item active">
+			<img class="d-block w-30 mx-auto " src="img/2-La_grange.JPG" alt="First slide">
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-30 mx-auto" src="img/IMG_6040.JPG" alt="Second slide">
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-30 mx-auto" src="img/IMG_6043.JPG" alt="Third slide">
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-30 mx-auto" src="img/IMG_6045.JPG" alt="Third slide">
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-30 mx-auto" src="img/IMG_6046.JPG" alt="Third slide">
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-30 mx-auto" src="img/IMG_6056.JPG" alt="Third slide">
+		</div>
+	</div>
+	<a class="carousel-control-prev" href="#monCarousel" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#monCarousel" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
 </div>
 
+<div class="hidden floating-buttons">
+	<div class="sharing-content ">
+		<label class="button-sharing " title="Suivez le compte Facebook de Cintré">
+			<a class="button-sharing_button" href="https://www.facebook.com/"
+			   target="_blank">
+				<img src="img/facebook.png"
+					 class="img  button-sharing_image"
+					 alt="Suivez le compte Facebook de Cintré"
+					 title="Facebook de Cintré">
+			</a>
+			<span class="button-sharing_label">Suivez le compte Facebook de Cintré</span>
+		</label>
+		<label class="button-sharing " title="Le fil d&#039;actu de Cintré">
+			<a class="button-sharing_button" href="https://twitter.com/" target="_blank">
+				<img src="img/twitter.png"
+					 class="img  button-sharing_image"
+					 alt="Le fil d&#039;actu Cintré" title="Twitter">
+			</a>
+			<span class="button-sharing_label">Le fil d&#039;actu de Cintré</span>
+		</label>
+		<label class="button-sharing " title="Instagram">
+			<a class="button-sharing_button" href="https://www.instagram.com/"
+			   target="_blank">
+				<img src="img/instagram.png"
+					 class="img  button-sharing_image" alt="" title="Instagram">
+			</a>
+			<span class="button-sharing_label">Instagram</span>
+		</label>
+
+		<label class="button-sharing" id="top_button" style="margin: 25px 0;" title="Haut de page">
+			<a class="button-sharing_button">
+				<i class="button-sharing_icon ui-icon icon-arrow-up"
+				   style="  transform: scale(2); color:#fff !important;" aria-hidden="true"></i>
+			</a>
+			<span class="button-sharing_label">Haut de page</span>
+		</label>
+
+	</div>
+</div>
 <br><br><br><br><br>
 
 <div id="container" class="d-flex justify-content-around flex-wrap">
 
-    <div id="news" class="w-75 p-3">
-        <div class="grid d-flex justify-content-around flex-wrap align-content-start">
-            <div class="figcaption"><a
-                    href="#"><img
-                    src="img/IMG_6043.JPG"
-                    alt="" width="313" height="214">
-                <p class="wrap_cat"><span class="cat no-glossary">À la Une</span></p>
-                <p class="titre no-glossary">VELOVERSAILLES : PARTEZ À LA DÉCOUVERTE DE VERSAILLES À VÉLO ! </p>
-                <div class="bodytexte"><p class="no-glossary">VeloVersailles organise une balade à vélo le dimanche 24
-                    mars 2019 Découvrir les nouveaux...</p></div>
-            </a></div>
+	<div id="news" class="w-75 p-3">
+		<div class="grid d-flex justify-content-around flex-wrap align-content-start">
+			<div class="figcaption"><a
+					href="#"><img
+					src="img/IMG_6043.JPG"
+					alt="" width="313" height="214">
+				<p class="wrap_cat"><span class="cat no-glossary">À la Une</span></p>
+				<p class="titre no-glossary">VELOVERSAILLES : PARTEZ À LA DÉCOUVERTE DE VERSAILLES À VÉLO ! </p>
+				<div class="bodytexte"><p class="no-glossary">VeloVersailles organise une balade à vélo le dimanche 24
+					mars 2019 Découvrir les nouveaux...</p></div>
+			</a></div>
 
-            <div class="figcaption"><a
-                    href="#"><img
-                    src="img/IMG_6043.JPG"
-                    alt="" width="313" height="214">
-                <p class="wrap_cat"><span class="cat no-glossary">À la Une</span></p>
-                <p class="titre no-glossary">VELOVERSAILLES : PARTEZ À LA DÉCOUVERTE DE VERSAILLES À VÉLO ! </p>
-                <div class="bodytexte"><p class="no-glossary">VeloVersailles organise une balade à vélo le dimanche 24
-                    mars 2019 Découvrir les nouveaux...</p></div>
-            </a></div>
+			<div class="figcaption"><a
+					href="#"><img
+					src="img/IMG_6043.JPG"
+					alt="" width="313" height="214">
+				<p class="wrap_cat"><span class="cat no-glossary">À la Une</span></p>
+				<p class="titre no-glossary">VELOVERSAILLES : PARTEZ À LA DÉCOUVERTE DE VERSAILLES À VÉLO ! </p>
+				<div class="bodytexte"><p class="no-glossary">VeloVersailles organise une balade à vélo le dimanche 24
+					mars 2019 Découvrir les nouveaux...</p></div>
+			</a></div>
 
-            <div class="figcaption"><a
-                    href="#"><img
-                    src="img/IMG_6043.JPG"
-                    alt="" width="313" height="214">
-                <p class="wrap_cat"><span class="cat no-glossary">À la Une</span></p>
-                <p class="titre no-glossary">VELOVERSAILLES : PARTEZ À LA DÉCOUVERTE DE VERSAILLES À VÉLO ! </p>
-                <div class="bodytexte"><p class="no-glossary">VeloVersailles organise une balade à vélo le dimanche 24
-                    mars 2019 Découvrir les nouveaux...</p></div>
-            </a></div>
-        </div>
-    </div>
+			<div class="figcaption"><a
+					href="#"><img
+					src="img/IMG_6043.JPG"
+					alt="" width="313" height="214">
+				<p class="wrap_cat"><span class="cat no-glossary">À la Une</span></p>
+				<p class="titre no-glossary">VELOVERSAILLES : PARTEZ À LA DÉCOUVERTE DE VERSAILLES À VÉLO ! </p>
+				<div class="bodytexte"><p class="no-glossary">VeloVersailles organise une balade à vélo le dimanche 24
+					mars 2019 Découvrir les nouveaux...</p></div>
+			</a></div>
+		</div>
+	</div>
 
-    <div id="menu" class="w	-25 p-3">
+	<div id="menu" class="w	-25 p-3">
 
-    </div>
+	</div>
 
 </div>
 
 
 <footer id="footer" class="region-footer " role="contentinfo">
-    <div class="block-footer trunk">
-        <div class="block-footer_left">
-            <a href="/" class="link-img " title="Ville de Cintré">
-                <img src="img/Cintre_logo.png"
-                     class="img " alt="Ville de Cintré" title="">
-            </a>
-            <a href="https://metropole.rennes.fr/" class="link-img " title="Rennes Métropole">
-                <img src="img/logo-rm-white_0.png"
-                     class="img " alt="Rennes Métropole" title="">
-            </a>
-            <a href="http://www.europe-en-france.gouv.fr/" class="link-img " title="Europe">
-                <img src="img/FEDER_new.png" class="img "
-                     alt="Logo FEDER" title="FEDER - Fond Européen">
-            </a>
-        </div>
+	<div class="block-footer trunk">
+		<div class="block-footer_left">
+			<a href="/" class="link-img " title="Ville de Cintré">
+				<img src="img/Cintre_logo.png"
+					 class="img " alt="Ville de Cintré" title="">
+			</a>
+			<a href="https://metropole.rennes.fr/" class="link-img " title="Rennes Métropole">
+				<img src="img/logo-rm-white_0.png"
+					 class="img " alt="Rennes Métropole" title="">
+			</a>
+			<a href="http://www.europe-en-france.gouv.fr/" class="link-img " title="Europe">
+				<img src="img/FEDER_new.png" class="img "
+					 alt="Logo FEDER" title="FEDER - Fond Européen">
+			</a>
+		</div>
 
-        <div class="block-footer_right">
-            <div class="grid grid--table grid--break-m">
-                <div class="grid_col grid_col-6">
-                    <div class="block-footer_links">
-                        <div class="menu-icons">
-                            <a href="https://www.facebook.com/" class="icon-image floating-link"
-                               title="Facebook Cintré"
-                               style="background-image: url(img/facebook.png);">Facebook</a>
-                            <a href="https://twitter.com/" class="icon-image floating-link"
-                               title="Twitter Cintré"
-                               style="background-image: url(img/twitter.png);">Twitter</a>
-                            <a href="https://www.instagram.com/" class="icon-image floating-link"
-                               title="Instagram Cintré"
-                               style="background-image: url(img/instagram.png);">Instagram</a>
-                            <a href="https://www.pinterest.fr/" class="icon-image " title="Pinterest Cintré"
-                               style="background-image: url(img/pinterest.png);">Pinterest</a>
-                            <a href="https://www.linkedin.com/" class="icon-image "
-                               title="LinkedIn Cintré"
-                               style="background-image: url(img/linkedin.png);">LinkedIn</a>
-                            <a href="https://www.youtube.com/" class="icon-image "
-                               title="YouTube Cintré"
-                               style="background-image: url(img/youtube.png);">YouTube</a>
-                        </div>
-                        <div class="menu-footer-links">
-                            <a href="/accessibilite"
-                               class="link link--white link--border-only-hover">
-                                <span class="link_label">Accessibilité</span>
-                            </a>
+		<div class="block-footer_right">
+			<div class="grid grid--table grid--break-m">
+				<div class="grid_col grid_col-6">
+					<div class="block-footer_links">
+						<div class="menu-icons">
+							<a href="https://www.facebook.com/" class="icon-image floating-link"
+							   title="Facebook Cintré"
+							   style="background-image: url(img/facebook.png);">Facebook</a>
+							<a href="https://twitter.com/" class="icon-image floating-link"
+							   title="Twitter Cintré"
+							   style="background-image: url(img/twitter.png);">Twitter</a>
+							<a href="https://www.instagram.com/" class="icon-image floating-link"
+							   title="Instagram Cintré"
+							   style="background-image: url(img/instagram.png);">Instagram</a>
+							<a href="https://www.pinterest.fr/" class="icon-image " title="Pinterest Cintré"
+							   style="background-image: url(img/pinterest.png);">Pinterest</a>
+							<a href="https://www.linkedin.com/" class="icon-image "
+							   title="LinkedIn Cintré"
+							   style="background-image: url(img/linkedin.png);">LinkedIn</a>
+							<a href="https://www.youtube.com/" class="icon-image "
+							   title="YouTube Cintré"
+							   style="background-image: url(img/youtube.png);">YouTube</a>
+						</div>
+						<div class="menu-footer-links">
+							<a href="/accessibilite"
+							   class="link link--white link--border-only-hover">
+								<span class="link_label">Accessibilité</span>
+							</a>
 
-                            <a href="/mentions-legales"
-                               class="link link--white link--border-only-hover">
-                                <span class="link_label">Mentions légales</span>
-                            </a>
+							<a href="/mentions-legales"
+							   class="link link--white link--border-only-hover">
+								<span class="link_label">Mentions légales</span>
+							</a>
 
-                            <a href="/flux-rss"
-                               class="link link--white link--border-only-hover">
-                                <span class="link_label">Flux RSS</span>
-                            </a>
+							<a href="/flux-rss"
+							   class="link link--white link--border-only-hover">
+								<span class="link_label">Flux RSS</span>
+							</a>
 
-                            <a href="/contact"
-                               class="link link--white link--border-only-hover">
-                                <span class="link_label">Nous contacter</span>
-                            </a>
+							<a href="/contact"
+							   class="link link--white link--border-only-hover">
+								<span class="link_label">Nous contacter</span>
+							</a>
 
-                            <a href="/plan-du-site"
-                               class="link link--white link--border-only-hover">
-                                <span class="link_label">Espace presse</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+							<a href="/plan-du-site"
+							   class="link link--white link--border-only-hover">
+								<span class="link_label">Espace presse</span>
+							</a>
+						</div>
+					</div>
+				</div>
 
-                <div class="grid_col grid_col-6">
-                    <div class="block-address">
-                        <div class="block-address_item">
-                            <a href="/contact"
-                               class="link block-address_title link--no-border a-block">
-                                <span class="link_label">Mairie de Cintré</span>
-                            </a>
-                            <div class="block-address_information">
-                                Hôtel de ville<br/>
-                                7 place Chêne Vert<br/>
-                                35310 CINTRÉ Cedex
-                            </div>
-                            <div class="block-address_telephone">
-                                Tel: 02 99 64 16 31
-                            </div>
-                        </div>
-                        <div class="block-address_item">
-                            <a href="/contact"
-                               class="link block-address_title link--no-border a-block">
-                                <span class="link_label">Rennes Métropole</span>
-                            </a>
-                            <div class="block-address_information">
-                                Hôtel de Rennes Métropole<br/>
-                                4 avenue Henri Fréville<br/>
-                                CS 93111<br/>
-                                35031 Rennes Cedex
-                            </div>
-                            <div class="block-address_telephone">
-                                Tel: 02 99 86 60 60
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hidden">
-                    <div class="sharing-content ">
-                        <label class="button-sharing " title="Suivez le compte Facebook de Cintré">
-                            <a class="button-sharing_button" href="https://www.facebook.com/"
-                               target="_blank">
-                                <img src="img/facebook.png"
-                                     class="img  button-sharing_image"
-                                     alt="Suivez le compte Facebook de Cintré"
-                                     title="Facebook de Cintré">
-                            </a>
-                            <span class="button-sharing_label">Suivez le compte Facebook de Cintré</span>
-                        </label>
-                        <label class="button-sharing " title="Le fil d&#039;actu de Cintré">
-                            <a class="button-sharing_button" href="https://twitter.com/" target="_blank">
-                                <img src="img/twitter.png"
-                                     class="img  button-sharing_image"
-                                     alt="Le fil d&#039;actu Cintré" title="Twitter">
-                            </a>
-                            <span class="button-sharing_label">Le fil d&#039;actu de Cintré</span>
-                        </label>
-                        <label class="button-sharing " title="Instagram">
-                            <a class="button-sharing_button" href="https://www.instagram.com/"
-                               target="_blank">
-                                <img src="img/instagram.png"
-                                     class="img  button-sharing_image" alt="" title="Instagram">
-                            </a>
-                            <span class="button-sharing_label">Instagram</span>
-                        </label>
+				<div class="grid_col grid_col-6">
+					<div class="block-address">
+						<div class="block-address_item">
+							<a href="/contact"
+							   class="link block-address_title link--no-border a-block">
+								<span class="link_label">Mairie de Cintré</span>
+							</a>
+							<div class="block-address_information">
+								Hôtel de ville<br/>
+								7 place Chêne Vert<br/>
+								35310 CINTRÉ Cedex
+							</div>
+							<div class="block-address_telephone">
+								Tel: 02 99 64 16 31
+							</div>
+						</div>
+						<div class="block-address_item">
+							<a href="/contact"
+							   class="link block-address_title link--no-border a-block">
+								<span class="link_label">Rennes Métropole</span>
+							</a>
+							<div class="block-address_information">
+								Hôtel de Rennes Métropole<br/>
+								4 avenue Henri Fréville<br/>
+								CS 93111<br/>
+								35031 Rennes Cedex
+							</div>
+							<div class="block-address_telephone">
+								Tel: 02 99 86 60 60
+							</div>
+						</div>
+					</div>
+				</div>
 
-                        <label class="button-sharing button-sharing--scroll-top" title="Haut de page">
-                            <a class="button-sharing_button" href="#scroll_top" target="_blank">
-                                <i class="button-sharing_icon icon icon-arrow-up" aria-hidden="true"></i>
-                                <span class="visually-hidden">Haut de page</span>
-                            </a>
-                            <span class="button-sharing_label">Haut de page</span>
-                        </label>
-                    </div>
-                </div>
-            </div>
+			</div>
 
-        </div>
+		</div>
 
-    </div>
+	</div>
 
 </footer>
 
