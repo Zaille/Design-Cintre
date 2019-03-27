@@ -1,3 +1,5 @@
+/***************** ALL *****************/
+
 header, nav {
 	display: block;
 }
@@ -10,6 +12,12 @@ h1 {
 	font-size: 2em;
 	margin: 0.67em 0
 }
+
+* {
+	box-sizing: border-box;
+}
+
+/***************** HEADER *****************/
 
 .rheader {
 	background-color: #fff;
@@ -193,9 +201,7 @@ h1 {
 	max-width: 120px
 }
 
-* {
-	box-sizing: border-box;
-}
+/***************** FOOTER *****************/
 
 .back-green {
 	background: #4CB955;
