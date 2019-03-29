@@ -51,10 +51,8 @@ textarea {
 
 .content-wrapper h1 {
     font-size: 260%;
-    margin: 0.67em 0;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    font-family: "Roboto", sans-serif;
+	margin: 20px 0 5px;
+	font-family: "Roboto", sans-serif;
     font-weight: 700;
     color: #3CA945;
     display: block;
@@ -187,8 +185,7 @@ input[type="radio"]:not(:checked), input[type="radio"]:checked {
 }
 
 input[type="radio"] {
-    margin: 4px 0 0;
-    margin-top: 1px;
+    margin: 1px 0 0;
     line-height: normal;
     box-sizing: border-box;
     padding: 0;
