@@ -1,375 +1,376 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style_contact.css">
-    <link rel="stylesheet" type="text/css" href="css/leaflet.css">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
 
-    <script type="text/javascript" src="http://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-    <title>Ville de Cintré</title>
+	<link rel="stylesheet" type="text/css" href="css/leaflet.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style_contact.css">
+
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"></script>
+
+	<script src="js/script.js"></script>
+	<title>Ville de Cintré</title>
 </head>
 <body>
 <header role="banner" class="rheader fixed">
-    <div class="rheader-wrapper">
-        <div class="rheader-wrapper"><a id="logo" href="index.html" title="Retour à l'accueil - Cintré"
-                                        class="rheader-logo"><h1 class="rheader-logo-cintre">Cintré</h1></a>
-            <a href="https://www.google.com/" title="Rechercher sur ville-cintre.fr"
-               aria-controls="rheader-search" role="button" class="rheader-button rheader-button-search">
-                <i class="rheader-button-icon icon-search-v2"><span class="ui-icon ui-icon-search"></span></i>
-            </a><nav id="navigation" tabindex="-1" role="navigation" class="rheader-nav">
-                <ul>
-                    <li class="rheader-nav-item"><a href="http://www.ville-cintre.fr/presentation.asp"><span
-                            class="rheader-nav-item-text">La commune</span></a></li><li class="rheader-nav-item"><a href="http://www.ville-cintre.fr/service-peri-scolaire.asp"><span
-                            class="rheader-nav-item-text">La vie au quotidien</span></a></li><li class="rheader-nav-item"><a href="http://www.ville-cintre.fr/associations.asp"><span
-                            class="rheader-nav-item-text">Culture, sports, loisirs</span></a></li><li class="rheader-nav-item"><a href="http://www.ville-cintre.fr/commerces.asp"><span
-                            class="rheader-nav-item-text">Économie / Emploi</span></a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+	<div class="rheader-wrapper">
+		<div class="rheader-wrapper"><a id="logo" href="index.html" title="Retour à l'accueil - Cintré"
+										class="rheader-logo"><h1 class="rheader-logo-cintre">Cintré</h1></a>
+			<a href="https://www.google.com/" title="Rechercher sur ville-cintre.fr"
+			   aria-controls="rheader-search" role="button" class="rheader-button rheader-button-search">
+				<i class="rheader-button-icon icon-search-v2"><span class="ui-icon ui-icon-search"></span></i>
+			</a>
+			<nav id="navigation" tabindex="-1" role="navigation" class="rheader-nav">
+				<ul>
+					<li class="rheader-nav-item"><a href="http://www.ville-cintre.fr/presentation.asp"><span
+							class="rheader-nav-item-text">La commune</span></a></li>
+					<li class="rheader-nav-item"><a href="http://www.ville-cintre.fr/service-peri-scolaire.asp"><span
+							class="rheader-nav-item-text">La vie au quotidien</span></a></li>
+					<li class="rheader-nav-item"><a href="http://www.ville-cintre.fr/associations.asp"><span
+							class="rheader-nav-item-text">Culture, sports, loisirs</span></a></li>
+					<li class="rheader-nav-item"><a href="http://www.ville-cintre.fr/commerces.asp"><span
+							class="rheader-nav-item-text">Économie / Emploi</span></a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
 </header>
 
 <br><br><br><br>
 
 <div id="content" class="content-wrapper">
-    <div class="introduction">
-        <div class="container">
-            <h1> Nous contacter</h1>
-            <div class="ezxmltext-field">
-                <p>Vous pouvez nous contacter à l'aide de ce formulaire ou en vous adressant au siège ou dans l'une des
-                    Maisons intercommunales réparties sur le territoire.</p>
-                <ul class="action">
-                    <li>
-                        <a href="http://www.ville-cintre.fr/services-municipaux.asp"
-                           target="_blank">Voir toutes les coordonnées</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+	<div class="introduction">
+		<div class="container">
+			<h1> Nous contacter</h1>
+			<div class="ezxmltext-field">
+				<p>Vous pouvez nous contacter à l'aide de ce formulaire ou en vous adressant au siège ou dans l'une des
+					Maisons intercommunales réparties sur le territoire.</p>
+				<ul class="action">
+					<li>
+						<a href="http://www.ville-cintre.fr/services-municipaux.asp"
+						   target="_blank">Voir toutes les coordonnées</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </div>
 <div class="container">
-    <div class="row content-row">
-        <section class="col-md-8">
+	<div class="row content-row">
+		<section class="col-md-8">
 
-            <div class="contact-form">
+			<div class="contact-form">
 
-                <form enctype="multipart/form-data">
+				<form enctype="multipart/form-data">
 
-                    <span class="oblg">Les champs marqués par un * sont obligatoires</span>
+					<span class="oblg">Les champs marqués par un * sont obligatoires</span>
 
-                    <fieldset class="form-group" id="bloc_message_2703">
+					<fieldset class="form-group" id="bloc_message_2703">
 
-                        <legend>Civilité <span>*</span></legend>
-                        <div class="radio">
-                            <input id="ContentObjectAttribute_ezsurvey_answer_id_2703_767_1"
-                                   name="ContentObjectAttribute_ezsurvey_answer_2703_767" type="radio"
-                                   value="madame"/><label
-                                for="ContentObjectAttribute_ezsurvey_answer_id_2703_767_1">Madame</label>
-                        </div>
-                        <div class="radio">
-                            <input id="ContentObjectAttribute_ezsurvey_answer_id_2703_767_2"
-                                   name="ContentObjectAttribute_ezsurvey_answer_2703_767" type="radio"
-                                   value="monsieur"/><label
-                                for="ContentObjectAttribute_ezsurvey_answer_id_2703_767_2">Monsieur</label>
-                        </div>
+						<legend>Civilité <span>*</span></legend>
+						<div class="radio">
+							<input id="ContentObjectAttribute_ezsurvey_answer_id_2703_767_1"
+								   name="ContentObjectAttribute_ezsurvey_answer_2703_767" type="radio"
+								   value="madame"/><label
+								for="ContentObjectAttribute_ezsurvey_answer_id_2703_767_1">Madame</label>
+						</div>
+						<div class="radio">
+							<input id="ContentObjectAttribute_ezsurvey_answer_id_2703_767_2"
+								   name="ContentObjectAttribute_ezsurvey_answer_2703_767" type="radio"
+								   value="monsieur"/><label
+								for="ContentObjectAttribute_ezsurvey_answer_id_2703_767_2">Monsieur</label>
+						</div>
 
-                    </fieldset>
-                    <div class="form-group" id="bloc_message_2704">
+					</fieldset>
+					<div class="form-group" id="bloc_message_2704">
 
-                        <label for="text_2">Nom <span>*</span></label>
+						<label for="text_2">Nom <span>*</span></label>
 
-                        <input id="text_2" class="form-control"
-                               name="ContentObjectAttribute_ezsurvey_answer_2704_767" type="text" size="70"
-                               value=""/></div>
-                    <div class="form-group" id="bloc_message_2705">
-                        <label for="text_3">Prénom </label>
+						<input id="text_2" class="form-control"
+							   name="ContentObjectAttribute_ezsurvey_answer_2704_767" type="text" size="70"
+							   value=""/></div>
+					<div class="form-group" id="bloc_message_2705">
+						<label for="text_3">Prénom </label>
 
-                        <input id="text_3" class="form-control"
-                               name="ContentObjectAttribute_ezsurvey_answer_2705_767" type="text" size="70"
-                               value=""/></div>
-                    <div class="form-group" id="bloc_message_2706">
-                        <label for="email_4">Courriel <span>*</span></label>
+						<input id="text_3" class="form-control"
+							   name="ContentObjectAttribute_ezsurvey_answer_2705_767" type="text" size="70"
+							   value=""/></div>
+					<div class="form-group" id="bloc_message_2706">
+						<label for="email_4">Courriel <span>*</span></label>
 
-                        <input id="email_4" class="form-control"
-                               name="ContentObjectAttribute_ezsurvey_answer_2706_767" type="text" size="70"
-                               value=""/></div>
-                    <div class="form-group" id="bloc_message_2707">
-                        <label for="text_5">Message <span>*</span></label>
+						<input id="email_4" class="form-control"
+							   name="ContentObjectAttribute_ezsurvey_answer_2706_767" type="text" size="70"
+							   value=""/></div>
+					<div class="form-group" id="bloc_message_2707">
+						<label for="text_5">Message <span>*</span></label>
 
-                        <textarea id="text_5" class="form-control"
-                                  name="ContentObjectAttribute_ezsurvey_answer_2707_767" rows="10"
-                                  cols="70"></textarea></div>
+						<textarea id="text_5" class="form-control"
+								  name="ContentObjectAttribute_ezsurvey_answer_2707_767" rows="10"
+								  cols="70"></textarea></div>
 
-                    <button class="btn btn-default" type="submit"
-                            name="ContentObjectAttribute_ezsurvey_store_button_767" value="Envoyer">Valider
-                    </button>
+					<button class="btn btn-default" type="submit"
+							name="ContentObjectAttribute_ezsurvey_store_button_767" value="Envoyer">Valider
+					</button>
 
-                </form>
+				</form>
 
-                <div class="note">
-                    <div class="ezxmltext-field"><p>Conformément à la loi "informatique et liberté" du 6 janvier
-                        1978 modifiée en 2004, vous disposez d’un droit d'accès, de rectification, de
-                        modification et de suppression des données qui vous concernent. Vous pouvez exercer ce
-                        droit en nous envoyant un courrier à : Cintré - Hôtel de ville, 7 place Chêne Vert, 35310 CINTRÉ
-                        Cedex Cedex</p></div>
-                </div>
+				<div class="note">
+					<div class="ezxmltext-field"><p>Conformément à la loi "informatique et liberté" du 6 janvier
+						1978 modifiée en 2004, vous disposez d’un droit d'accès, de rectification, de
+						modification et de suppression des données qui vous concernent. Vous pouvez exercer ce
+						droit en nous envoyant un courrier à : Cintré - Hôtel de ville, 7 place Chêne Vert, 35310 CINTRÉ
+						Cedex Cedex</p></div>
+				</div>
 
-            </div>
-        </section>
-        <aside class="col-md-4">
-            <div class="bloc-type-2 light-border bloc-acces open">
-                <h3 tabindex="0">Accès rapide<span class="bloc-toggle"></span></h3>
-                <ul class="acces-rapide-left">
-                    <li>
-                        <a href="https://lannuaire.service-public.fr/bretagne/ille-et-vilaine/mairie-35080-01"
-                           title="Annuaire des services">
-                            <div class="img-wrapper">
-                                <img src="./img/1394221c915875c0bbcc0c55a2a5d69e.svg" alt="icon-1">
-                            </div>
-                            <span>Annuaire des services</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www.ville-cintre.fr/location-de-salle.asp"
-                           title="Annuaire des équipements">
-                            <div class="img-wrapper">
-                                <img src="./img/4af02370b6fa8386def93639bc3b8f59.svg" alt="icon-2">
-                            </div>
-                            <span>Annuaire des équipements</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www.ville-cintre.fr/associations.asp"
-                           title="Sports">
-                            <div class="img-wrapper">
-                                <img src="./img/b657274128e127e9b3e4f8f09bbcf733.svg" alt="icon-3">
-                            </div>
-                            <span>Sports</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="contact.html" title="Nous contacter">
-                            <div class="img-wrapper">
-                                <img src="./img/c79082a088a3e63a16845391e7af88d2.svg" alt="icon-4">
-                            </div>
-                            <span>Nous contacter</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www.ville-cintre.fr/environnement.asp"
-                           title="Déchèteries">
-                            <div class="img-wrapper">
-                                <img src="./img/05a018b9e660842f6a5a5d043c094776.svg" alt="icon-5">
-                            </div>
-                            <span>Environnement</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www.ville-cintre.fr/commerces.asp"
-                           target="_blank" title="Jours de collecte">
-                            <div class="img-wrapper">
-                                <img src="./img/f548428bbdbc6b029f2ab9e934229da3.svg" alt="icon-6">
-                            </div>
-                            <span>Commerces</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://dechets.rennesmetropole.fr/"
-                           title="Collectes sélectives">
-                            <div class="img-wrapper">
-                                <img src="./img/95c952d9ef1d95c58c246e7efd0c03bc.svg" alt="icon-7">
-                            </div>
-                            <span>Collectes sélectives</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www.ville-cintre.fr/point-accueil-emploi.asp"
-                           title="L'agglomération recrute">
-                            <div class="img-wrapper">
-                                <img src="./img/696353eb0037596a640d02a6cbb14cd2.svg" alt="icon-8">
-                            </div>
-                            <span>L'agglomération recrute</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://www.ville-cintre.fr/marchands-ambulants.asp"
-                           title="Marchés publics">
-                            <div class="img-wrapper">
-                                <img src="./img/74a7c91e04ef6e47edafd0f3eab0fc25.svg" alt="icon-9">
-                            </div>
-                            <span>Marchés publics</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </aside>
-    </div>
+			</div>
+		</section>
+		<aside class="col-md-4">
+			<div class="bloc-type-2 light-border bloc-acces open">
+				<h3 tabindex="0">Accès rapide<span class="bloc-toggle"></span></h3>
+				<ul class="acces-rapide-left">
+					<li>
+						<a href="https://lannuaire.service-public.fr/bretagne/ille-et-vilaine/mairie-35080-01"
+						   title="Annuaire des services">
+							<div class="img-wrapper">
+								<img src="./img/1394221c915875c0bbcc0c55a2a5d69e.svg" alt="icon-1">
+							</div>
+							<span>Annuaire des services</span>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.ville-cintre.fr/location-de-salle.asp"
+						   title="Annuaire des équipements">
+							<div class="img-wrapper">
+								<img src="./img/4af02370b6fa8386def93639bc3b8f59.svg" alt="icon-2">
+							</div>
+							<span>Annuaire des équipements</span>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.ville-cintre.fr/associations.asp"
+						   title="Sports">
+							<div class="img-wrapper">
+								<img src="./img/b657274128e127e9b3e4f8f09bbcf733.svg" alt="icon-3">
+							</div>
+							<span>Sports</span>
+						</a>
+					</li>
+					<li>
+						<a href="contact.html" title="Nous contacter">
+							<div class="img-wrapper">
+								<img src="./img/c79082a088a3e63a16845391e7af88d2.svg" alt="icon-4">
+							</div>
+							<span>Nous contacter</span>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.ville-cintre.fr/environnement.asp"
+						   title="Déchèteries">
+							<div class="img-wrapper">
+								<img src="./img/05a018b9e660842f6a5a5d043c094776.svg" alt="icon-5">
+							</div>
+							<span>Environnement</span>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.ville-cintre.fr/commerces.asp"
+						   target="_blank" title="Commerces">
+							<div class="img-wrapper">
+								<img src="./img/f548428bbdbc6b029f2ab9e934229da3.svg" alt="icon-6">
+							</div>
+							<span>Commerces</span>
+						</a>
+					</li>
+					<li>
+						<a href="http://dechets.rennesmetropole.fr/"
+						   title="Collectes sélectives">
+							<div class="img-wrapper">
+								<img src="./img/95c952d9ef1d95c58c246e7efd0c03bc.svg" alt="icon-7">
+							</div>
+							<span>Collectes sélectives</span>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.ville-cintre.fr/point-accueil-emploi.asp"
+						   title="L'agglomération recrute">
+							<div class="img-wrapper">
+								<img src="./img/696353eb0037596a640d02a6cbb14cd2.svg" alt="icon-8">
+							</div>
+							<span>L'agglomération recrute</span>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.ville-cintre.fr/marchands-ambulants.asp"
+						   title="Marchés publics">
+							<div class="img-wrapper">
+								<img src="./img/74a7c91e04ef6e47edafd0f3eab0fc25.svg" alt="icon-9">
+							</div>
+							<span>Marchés publics</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</aside>
+	</div>
 </div>
 
 <br><br><br><br><br>
-
 <div class="hidden floating-buttons">
-    <div class="sharing-content ">
-        <label class="button-sharing " title="Suivez le compte Facebook de Cintré">
-            <a class="button-sharing_button" href="https://www.facebook.com/"
-               target="_blank">
-                <img src="img/facebook.png"
-                     class="img  button-sharing_image"
-                     alt="Suivez le compte Facebook de Cintré"
-                     title="Facebook de Cintré">
-            </a>
-            <span class="button-sharing_label">Suivez le compte Facebook de Cintré</span>
-        </label>
-        <label class="button-sharing " title="Le fil d&#039;actu de Cintré">
-            <a class="button-sharing_button" href="https://twitter.com/" target="_blank">
-                <img src="img/twitter.png"
-                     class="img  button-sharing_image"
-                     alt="Le fil d&#039;actu Cintré" title="Twitter">
-            </a>
-            <span class="button-sharing_label">Le fil d&#039;actu de Cintré</span>
-        </label>
-        <label class="button-sharing " title="Instagram">
-            <a class="button-sharing_button" href="https://www.instagram.com/"
-               target="_blank">
-                <img src="img/instagram.png"
-                     class="img  button-sharing_image" alt="" title="Instagram">
-            </a>
-            <span class="button-sharing_label">Instagram</span>
-        </label>
+	<div class="sharing-content ">
+		<label class="button-sharing " title="Suivez le compte Facebook de Cintré">
+			<a class="button-sharing_button" href="https://www.facebook.com/"
+			   target="_blank">
+				<img src="img/facebook.png"
+					 class="img  button-sharing_image"
+					 alt="Suivez le compte Facebook de Cintré"
+					 title="Facebook de Cintré">
+			</a>
+			<span class="button-sharing_label">Suivez le compte Facebook de Cintré</span>
+		</label>
+		<label class="button-sharing " title="Le fil d&#039;actu de Cintré">
+			<a class="button-sharing_button" href="https://twitter.com/" target="_blank">
+				<img src="img/twitter.png"
+					 class="img  button-sharing_image"
+					 alt="Le fil d&#039;actu Cintré" title="Twitter">
+			</a>
+			<span class="button-sharing_label">Le fil d&#039;actu de Cintré</span>
+		</label>
+		<label class="button-sharing " title="Instagram">
+			<a class="button-sharing_button" href="https://www.instagram.com/"
+			   target="_blank">
+				<img src="img/instagram.png"
+					 class="img  button-sharing_image" alt="" title="Instagram">
+			</a>
+			<span class="button-sharing_label">Instagram</span>
+		</label>
 
-        <label class="button-sharing" id="top_button" style="margin: 25px 0;" title="Haut de page">
-            <a class="button-sharing_button">
-                <i class="button-sharing_icon ui-icon white icon-arrow-up"
-                   style="  transform: scale(2);" aria-hidden="true"></i>
-            </a>
-            <span class="button-sharing_label">Haut de page</span>
-        </label>
+		<label class="button-sharing" id="top_button" style="margin: 25px 0;" title="Haut de page">
+			<a class="button-sharing_button">
+				<i class="button-sharing_icon ui-icon white icon-arrow-up"
+				   style="  transform: scale(2);" aria-hidden="true"></i>
+			</a>
+			<span class="button-sharing_label">Haut de page</span>
+		</label>
 
-    </div>
+	</div>
 </div>
 <footer id="footer" class="region-footer " role="contentinfo">
-    <div class="block-footer trunk">
-        <div class="block-footer_left">
-            <a href="/" class="link-img " title="Ville de Cintré">
-                <img src="img/Cintre_logo.png"
-                     class="img " alt="Ville de Cintré" title="">
-            </a>
-            <a href="https://metropole.rennes.fr/" class="link-img " title="Rennes Métropole">
-                <img src="img/logo-rm-white_0.png"
-                     class="img " alt="Rennes Métropole" title="">
-            </a>
-            <a href="http://www.europe-en-france.gouv.fr/" class="link-img " title="Europe">
-                <img src="img/FEDER_new.png" class="img "
-                     alt="Logo FEDER" title="FEDER - Fond Européen">
-            </a>
-        </div>
+	<div class="block-footer trunk">
+		<div class="block-footer_left">
+			<a href="/" class="link-img " title="Ville de Cintré">
+				<img src="img/Cintre_logo.png"
+					 class="img " alt="Ville de Cintré" title="">
+			</a>
+			<a href="https://metropole.rennes.fr/" class="link-img " title="Rennes Métropole">
+				<img src="img/logo-rm-white_0.png"
+					 class="img " alt="Rennes Métropole" title="">
+			</a>
+		</div>
 
-        <div class="block-footer_right">
-            <div class="grid grid--table grid--break-m">
-                <div class="grid_col grid_col-6">
-                    <div class="block-footer_links">
-                        <div class="menu-icons">
-                            <a href="https://www.facebook.com/" class="icon-image floating-link"
-                               title="Facebook Cintré"
-                               style="background-image: url(img/facebook.png);">Facebook</a>
-                            <a href="https://twitter.com/" class="icon-image floating-link"
-                               title="Twitter Cintré"
-                               style="background-image: url(img/twitter.png);">Twitter</a>
-                            <a href="https://www.instagram.com/" class="icon-image floating-link"
-                               title="Instagram Cintré"
-                               style="background-image: url(img/instagram.png);">Instagram</a>
-                            <a href="https://www.pinterest.fr/" class="icon-image " title="Pinterest Cintré"
-                               style="background-image: url(img/pinterest.png);">Pinterest</a>
-                            <a href="https://www.linkedin.com/" class="icon-image "
-                               title="LinkedIn Cintré"
-                               style="background-image: url(img/linkedin.png);">LinkedIn</a>
-                            <a href="https://www.youtube.com/" class="icon-image "
-                               title="YouTube Cintré"
-                               style="background-image: url(img/youtube.png);">YouTube</a>
-                        </div>
-                        <div class="menu-footer-links">
-                            <a href="/accessibilite"
-                               class="link link--white link--border-only-hover">
-                                <span class="link_label">Accessibilité</span>
-                            </a>
+		<div class="block-footer_right">
+			<div class="grid grid--table grid--break-m">
+				<div class="grid_col grid_col-6">
+					<div class="block-footer_links">
+						<div class="menu-icons">
+							<a href="https://www.facebook.com/" class="icon-image floating-link"
+							   title="Facebook Cintré"
+							   style="background-image: url(img/facebook.png);">Facebook</a>
+							<a href="https://twitter.com/" class="icon-image floating-link"
+							   title="Twitter Cintré"
+							   style="background-image: url(img/twitter.png);">Twitter</a>
+							<a href="https://www.instagram.com/" class="icon-image floating-link"
+							   title="Instagram Cintré"
+							   style="background-image: url(img/instagram.png);">Instagram</a>
+							<a href="https://www.pinterest.fr/" class="icon-image " title="Pinterest Cintré"
+							   style="background-image: url(img/pinterest.png);">Pinterest</a>
+							<a href="https://www.linkedin.com/" class="icon-image "
+							   title="LinkedIn Cintré"
+							   style="background-image: url(img/linkedin.png);">LinkedIn</a>
+							<a href="https://www.youtube.com/" class="icon-image "
+							   title="YouTube Cintré"
+							   style="background-image: url(img/youtube.png);">YouTube</a>
+						</div>
+						<div class="menu-footer-links">
+							<a href="#"
+							   class="link link--white link--border-only-hover">
+								<span class="link_label">Accessibilité</span>
+							</a>
 
-                            <a href="/mentions-legales"
-                               class="link link--white link--border-only-hover">
-                                <span class="link_label">Mentions légales</span>
-                            </a>
+							<a href="#"
+							   class="link link--white link--border-only-hover">
+								<span class="link_label">Mentions légales</span>
+							</a>
 
-                            <a href="/flux-rss"
-                               class="link link--white link--border-only-hover">
-                                <span class="link_label">Flux RSS</span>
-                            </a>
+							<a href="#"
+							   class="link link--white link--border-only-hover">
+								<span class="link_label">Flux RSS</span>
+							</a>
 
-                            <a href="/contact"
-                               class="link link--white link--border-only-hover">
-                                <span class="link_label">Nous contacter</span>
-                            </a>
+							<a href="contact.html"
+							   class="link link--white link--border-only-hover">
+								<span class="link_label">Nous contacter</span>
+							</a>
 
-                            <a href="/plan-du-site"
-                               class="link link--white link--border-only-hover">
-                                <span class="link_label">Espace presse</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+							<a href="#"
+							   class="link link--white link--border-only-hover">
+								<span class="link_label">Espace presse</span>
+							</a>
+						</div>
+					</div>
+				</div>
 
-                <div class="grid_col grid_col-6">
-                    <div class="block-address">
-                        <div class="block-address_item">
-                            <a href="/contact"
-                               class="link block-address_title link--no-border a-block">
-                                <span class="link_label">Mairie de Cintré</span>
-                            </a>
-                            <div class="block-address_information">
-                                Hôtel de ville<br/>
-                                7 place Chêne Vert<br/>
-                                35310 CINTRÉ Cedex
-                            </div>
-                            <div class="block-address_telephone">
-                                Tel: 02 99 64 16 31
-                            </div>
-                        </div>
-                        <div class="block-address_item">
-                            <a href="/contact"
-                               class="link block-address_title link--no-border a-block">
-                                <span class="link_label">Rennes Métropole</span>
-                            </a>
-                            <div class="block-address_information">
-                                Hôtel de Rennes Métropole<br/>
-                                4 avenue Henri Fréville<br/>
-                                CS 93111<br/>
-                                35031 Rennes Cedex
-                            </div>
-                            <div class="block-address_telephone">
-                                Tel: 02 99 86 60 60
-                            </div>
-                        </div>
-                    </div>
-                </div>
+				<div class="grid_col grid_col-6">
+					<div class="block-address">
+						<div class="block-address_item">
+							<a href="contact.html"
+							   class="link block-address_title link--no-border a-block">
+								<span class="link_label">Mairie de Cintré</span>
+							</a>
+							<div class="block-address_information">
+								Hôtel de ville<br/>
+								7 place Chêne Vert<br/>
+								35310 CINTRÉ Cedex
+							</div>
+							<div class="block-address_telephone">
+								Tel: 02 99 64 16 31
+							</div>
+						</div>
+						<div class="block-address_item">
+							<a href="contact.html"
+							   class="link block-address_title link--no-border a-block">
+								<span class="link_label">Rennes Métropole</span>
+							</a>
+							<div class="block-address_information">
+								Hôtel de Rennes Métropole<br/>
+								4 avenue Henri Fréville<br/>
+								CS 93111<br/>
+								35031 Rennes Cedex
+							</div>
+							<div class="block-address_telephone">
+								Tel: 02 99 86 60 60
+							</div>
+						</div>
+					</div>
+				</div>
 
-            </div>
+			</div>
 
-        </div>
+		</div>
 
-    </div>
+	</div>
 
 </footer>
 
