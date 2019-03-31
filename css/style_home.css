@@ -48,8 +48,8 @@
 
 .news .figure {
 	width: 30%;
-	height: 25rem;
-	margin: 1rem 5px;
+	height: 27rem;
+	margin: 1.3rem 0.45rem;
 	overflow: hidden;
 }
 
@@ -152,4 +152,13 @@ a.lien::after {
 	padding: 0 0 0 .725em;
 	font-size: 1.6rem;
 	font-style: italic;
+}
+
+.bulletin {
+	margin-top: 2rem;
+}
+
+.bulletin img{
+	padding: .7rem;
+
 }

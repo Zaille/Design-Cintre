@@ -17,16 +17,16 @@ img {
     opacity: 0.7;
 }
 
-.content-wrapper .container {
-    max-width: 1350px;
+.content-wrapper .containerHeader {
+    /*max-width: 1350px;*/
     margin-left: 100px;
     margin-right: 100px;
-    width: 1170px;
+    /*width: 1170px;*/
     padding-left: 13px;
     padding-right: 13px
 }
 
-.content-wrapper .container h1 {
+.content-wrapper .containerHeader h1 {
     font-size: 260%;
     margin: 0.67em 0;
     margin-top: 20px;
@@ -103,7 +103,8 @@ img {
 
 #content .colGauche .col_centre {
     padding: 0 10% 0 10%;
-    float: left;
+    margin: .813rem auto 0 auto;
+    max-width: 220rem;
 }
 
 #content .colGauche .col_centre h1 {
