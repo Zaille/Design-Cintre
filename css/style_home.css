@@ -7,17 +7,15 @@
 	.contenu .news {
 		width: 100% !important;
 	}
-
 }
 
 .contenu {
 	width: 100%;
 	margin: 2.813rem auto 0 auto;
-	max-width: 100rem;
+	max-width: 150rem;
 	padding: 0 3%;
 	overflow: hidden;
 	position: relative;
-
 }
 
 .contenu .news {
@@ -32,7 +30,6 @@
 	width: 25%;
 	padding: 0 0 0 3%;
 	float: left;
-
 }
 
 .news .figure .figcaption {
@@ -46,13 +43,12 @@
 	-o-transition: all .35s ease-in-out .35s;
 	transition: all .35s ease-in-out .35s;
 	margin: -6.25em 0 0 0 !important;
-
 }
 
 .news .figure {
 	width: 30%;
-	height: 20rem;
-	margin: 10px 5px;
+	height: 25rem;
+	margin: 1rem 5px;
 	overflow: hidden;
 }
 
