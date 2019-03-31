@@ -20,7 +20,7 @@ h1 {
 
 body {
 	font-weight: 400;
-	font-family: "regular", arial, sans-serif;
+	font-family: Roboto, arial regular, sans-serif;
 }
 
 /***************** HEADER *****************/
@@ -31,7 +31,7 @@ body {
 	position: relative;
 	width: 100%;
 	z-index: 1300;
-	box-shadow: 0 8px 6px -10px #000000;
+	box-shadow: 0 8px 6px -10px #040f0f;
 	overflow: hidden;
 	text-align: right;
 	white-space: -moz-pre-wrap;
@@ -45,7 +45,7 @@ body {
 }
 
 .rheader a {
-	color: #4CB955;
+	color: #2ba84a;
 	text-decoration: none;
 }
 
@@ -102,7 +102,7 @@ body {
 }
 
 .rheader-wrapper > .rheader-button:hover, .rheader-wrapper > .rheader-button.active {
-	background: #3CA945;
+	background: #2ba84a;
 	color: #fff
 }
 
@@ -121,7 +121,7 @@ body {
 
 .rheader-nav-item:hover, .rheader-nav-item:focus, .rheader-nav-item.current {
 	transition: background-color .3s ease;
-	background-color: #3CA945
+	background-color: #2ba84a
 }
 
 .rheader-nav-item:hover a, .rheader-nav-item:focus a, .rheader-nav-item.current a {
@@ -232,6 +232,9 @@ body {
 	background-image: url("http://download.jqueryui.com/themeroller/images/ui-icons_ffffff_256x240.png");
 }
 
+.button-sharing_button{
+	background: #040f0f !important;
+}
 .button-sharing_button:focus, .button-sharing_button:hover, .button-sharing:focus .button-sharing_button, .button-sharing:hover .button-sharing_button {
 	background: #4CB955 !important;
 }
