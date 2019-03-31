@@ -13,7 +13,7 @@
 .contenu {
 	width: 100%;
 	margin: 2.813rem auto 0 auto;
-	max-width: 90rem;
+	max-width: 100rem;
 	padding: 0 3%;
 	overflow: hidden;
 	position: relative;
@@ -40,8 +40,13 @@
 }
 
 .news .figure:hover .figcaption {
-	transition: margin .3s ease;
+	-webkit-transition: all .35s ease-in-out .35s;
+	-moz-transition: all .35s ease-in-out .35s;
+	-ms-transition: all .35s ease-in-out .35s;
+	-o-transition: all .35s ease-in-out .35s;
+	transition: all .35s ease-in-out .35s;
 	margin: -6.25em 0 0 0 !important;
+
 }
 
 .news .figure {
