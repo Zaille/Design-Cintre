@@ -215,6 +215,14 @@ h1 {
 	overflow: visible !important;
 }
 
+.ui-icon.green {
+	background-image: url("http://download.jqueryui.com/themeroller/images/ui-icons_4cb955_256x240.png");
+}
+
+.rheader-wrapper > .rheader-button:hover .ui-icon, .rheader-wrapper > .rheader-button.active .ui-icon {
+	background-image: url("http://download.jqueryui.com/themeroller/images/ui-icons_ffffff_256x240.png");
+}
+
 .ui-icon.white {
 	background-image: url("http://download.jqueryui.com/themeroller/images/ui-icons_ffffff_256x240.png");
 }
