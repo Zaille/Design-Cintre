@@ -18,6 +18,11 @@ h1 {
 	box-sizing: border-box;
 }
 
+body {
+	font-weight: 400;
+	font-family: "regular", arial, sans-serif;
+}
+
 /***************** HEADER *****************/
 
 .rheader {
@@ -74,7 +79,7 @@ h1 {
 }
 
 .rheader-logo-cintre {
-	background: url("../img/Cintre_logo.png") center center no-repeat;
+	background: url("../img/logo/Cintre_logo.png") center center no-repeat;
 	background-size: contain;
 	display: block;
 	height: 100%;

@@ -55,7 +55,7 @@ img {
 
 .ezxmltext-field ul li:before {
     content: '';
-    background: url("../img/icon-right-2.png") left 0 no-repeat;
+    background: url("../img/icon/icon-right-2.png") left 0 no-repeat;
     position: absolute;
     left: 0;
     top: 0;
