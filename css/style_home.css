@@ -1,8 +1,70 @@
 /***************** BODY *****************/
 
-.news .grid figure:hover figcaption {
+@media screen  and (max-width: 750px) {
+	#menu {
+		display: none !important;
+	}
+	.contenu .news {
+		width: 100% !important;
+	}
+
+}
+
+.contenu {
+	width: 100%;
+	margin: 2.813rem auto 0 auto;
+	max-width: 90rem;
+	padding: 0 3%;
+	overflow: hidden;
+	position: relative;
+
+}
+
+.contenu .news {
+	display: inline-block;
+	width: 75%;
+	float: left;
+}
+
+.contenu #menu {
+	display: inline-block;
+	margin: 3.438rem 0 0 0;
+	width: 25%;
+	padding: 0 0 0 3%;
+	float: left;
+
+}
+
+.news .figure .figcaption {
+	transition: margin .3s ease;
+}
+
+.news .figure:hover .figcaption {
+	transition: margin .3s ease;
 	margin: -6.25em 0 0 0 !important;
 }
+
+.news .figure {
+	width: 30%;
+	height: 20rem;
+	margin: 10px 5px;
+	overflow: hidden;
+}
+
+.news .figure img {
+	width: 100%;
+	height: auto;
+}
+
+.news .figure .titre {
+	text-transform: uppercase;
+	cursor: pointer;
+	min-height: auto;
+	color: #043964;
+	font-size: 1.071em;
+	font-family: semiBold, sans-serif;
+}
+
 
 .news .grid figure p, .news .grid .figure p {
 	margin: 0;
