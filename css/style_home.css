@@ -4,7 +4,7 @@
 	margin: -6.25em 0 0 0 !important;
 }
 
-.news .grid figure p, .grid .figure p {
+.news .grid figure p, .news .grid .figure p {
 	margin: 0;
 	position: relative;
 	bottom: 0;
@@ -16,8 +16,7 @@
 	font-size: .85em;
 }
 
-/*noinspection CssUnknownProperty*/
-.news .grid figure .bodytexte, .grid .figure .bodytexte {
+.news .grid figure .bodytexte, .news .grid .figure .bodytexte {
 	margin: .8129999999999999rem 0 0 0;
 	overflow: hidden;
 	opacity: 0;
@@ -28,7 +27,7 @@
 	transition: all .35s ease-in-out 0s;
 }
 
-.news .grid figure .titre, .grid .figure .titre {
+.news .grid figure .titre, .news .grid .figure .titre {
 	text-transform: uppercase;
 	cursor: pointer;
 	min-height: auto;
@@ -37,7 +36,7 @@
 	font-family: semiBold, sans-serif;
 }
 
-.news .grid figure .wrap_cat, .grid .figure .wrap_cat {
+.news .grid figure .wrap_cat, .news .grid .figure .wrap_cat {
 	margin: .625em 0 .375rem 0;
 }
 
@@ -48,7 +47,7 @@
 	height: auto;
 }
 
-.news .grid figure figcaption, .grid .figure figcaption, .grid figure .figcaption, .grid .figure .figcaption {
+.news .grid figure figcaption, .news .grid .figure figcaption, .news .grid figure .figcaption, .news .grid .figure .figcaption {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -62,10 +61,10 @@
 }
 
 .news .grid .figure {
-	height: 25rem;
+	height: 50rem;
 }
 
-.news .grid figure, .grid .figure {
+.news .grid figure, .news .grid .figure {
 	position: relative;
 	float: left;
 	overflow: hidden;

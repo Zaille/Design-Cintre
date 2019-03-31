@@ -1,421 +1,421 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-              crossorigin="anonymous">
-        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
-        <link rel="stylesheet" type="text/css" href="css/leaflet.css">
-        <link rel="stylesheet" type="text/css" href="css/master.css">
-        <link rel="stylesheet" type="text/css" href="css/style_histoire.css">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			  crossorigin="anonymous">
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/leaflet.css">
+		<link rel="stylesheet" type="text/css" href="css/master.css">
+		<link rel="stylesheet" type="text/css" href="css/style_histoire.css">
 
-        <script
-                src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-                integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-                crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-                crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-                crossorigin="anonymous"></script>
-        <script src="js/script.js"></script>
-        <title>Histoire de Cintré</title>
-    </head>
+		<script
+				src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+				integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+				crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+				integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+				crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+				integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+				crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+				integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+				crossorigin="anonymous"></script>
+		<script src="js/script.js"></script>
+		<title>Histoire de Cintré</title>
+	</head>
 </head>
 <body>
 <header role="banner" class="rheader fixed">
-    <div class="rheader-wrapper">
-        <div class="rheader-wrapper"><a id="logo" href="index.html" title="Retour à l'accueil - Cintré"
-                                        class="rheader-logo"><h1 class="rheader-logo-cintre">Cintré</h1></a>
-            <a href="https://www.google.com/" title="Rechercher sur ville-cintre.fr"
-               aria-controls="rheader-search" role="button" class="rheader-button rheader-button-search">
-                <i class="rheader-button-icon icon-search-v2"><span class="ui-icon ui-icon-search"></span></i>
-            </a>
-            <nav id="navigation" tabindex="-1" role="navigation" class="rheader-nav">
-                <ul>
-                    <li class="rheader-nav-item"><a href="presentation.html"><span
-                            class="rheader-nav-item-text">La commune</span></a></li>
-                    <li class="rheader-nav-item"><a href="http://www.ville-cintre.fr/service-peri-scolaire.asp"><span
-                            class="rheader-nav-item-text">La vie au quotidien</span></a></li>
-                    <li class="rheader-nav-item"><a href="http://www.ville-cintre.fr/associations.asp"><span
-                            class="rheader-nav-item-text">Culture, sports, loisirs</span></a></li>
-                    <li class="rheader-nav-item"><a href="http://www.ville-cintre.fr/commerces.asp"><span
-                            class="rheader-nav-item-text">Économie / Emploi</span></a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+	<div class="rheader-wrapper">
+		<div class="rheader-wrapper"><a id="logo" href="index.html" title="Retour à l'accueil - Cintré"
+										class="rheader-logo"><h1 class="rheader-logo-cintre">Cintré</h1></a>
+			<a href="https://www.google.com/" title="Rechercher sur ville-cintre.fr"
+			   aria-controls="rheader-search" role="button" class="rheader-button rheader-button-search">
+				<i class="rheader-button-icon icon-search-v2"><span class="ui-icon ui-icon-search"></span></i>
+			</a>
+			<nav id="navigation" tabindex="-1" role="navigation" class="rheader-nav">
+				<ul>
+					<li class="rheader-nav-item"><a href="presentation.html"><span
+							class="rheader-nav-item-text">La commune</span></a></li>
+					<li class="rheader-nav-item"><a href="http://www.ville-cintre.fr/service-peri-scolaire.asp"><span
+							class="rheader-nav-item-text">La vie au quotidien</span></a></li>
+					<li class="rheader-nav-item"><a href="http://www.ville-cintre.fr/associations.asp"><span
+							class="rheader-nav-item-text">Culture, sports, loisirs</span></a></li>
+					<li class="rheader-nav-item"><a href="http://www.ville-cintre.fr/commerces.asp"><span
+							class="rheader-nav-item-text">Économie / Emploi</span></a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
 </header>
 
 <br><br><br><br>
 
 <div id="content" class="content-wrapper">
-    <div class="introduction">
-        <div class="container">
-            <h1>Présentation</h1>
-            <div class="ezxmltext-field">
-                <p>Cintré est une commune française située dans le département d'Ille-et-Vilaine en Région Bretagne.
-                    D'une population municipale de
-                    2276 habitants en 2016, elle est une des 43 communes de Rennes Métropole.</p>
-                <ul class="action">
-                    <li>
-                        <a href="http://www.ville-cintre.fr/services-municipaux.asp"
-                           target="_blank">Page d'accueil du site</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+	<div class="introduction">
+		<div class="container">
+			<h1>Présentation</h1>
+			<div class="ezxmltext-field">
+				<p>Cintré est une commune française située dans le département d'Ille-et-Vilaine en Région Bretagne.
+					D'une population municipale de
+					2276 habitants en 2016, elle est une des 43 communes de Rennes Métropole.</p>
+				<ul class="action">
+					<li>
+						<a href="http://www.ville-cintre.fr/services-municipaux.asp"
+						   target="_blank">Page d'accueil du site</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
-    <br><br><br><br><br>
+	<br><br><br><br><br>
 
-    <div class="colGauche">
-        <div class="col_centre" id="contentCentre"><h1>Histoire de Cintré</h1>
-            <div id="c1613">
-                <div class="ce-textpic ce-left ce-intext">
-                    <div class="ce-gallery" data-ce-columns="1" data-ce-images="1">
-                        <div class="ce-row">
-                            <div class="ce-column">
-                                <figure role="group"><img
-                                        src="img/Eglise_cintre.jpg" alt="">
-                                    <figcaption><span class="no_in_screen">Photo</span>Cintré, Ville d'Histoire
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ce-bodytext">
-                        <p class="chapeau text_bleu"><b>Une commune à vivre enracinnée dans son hisoire...</b></p>
-                        <p class="align-justify">Cintré est un prieuré qui appartient à l’abbaye Saint Melaine de Rennes
-                            en
-                            1152. L’Ecclésia de Cintreyo est citée par le pape Luce III en 1185 pour confirmer cette
-                            possession.</p>
-                        <p class="align-justify">En 1230, l’abbé de Saint-Melaine échange l’église de Cintré et la
-                            chapelle
-                            Notre-Dame de Mordelles au parc du Pressoir, contre l’église de Melesse que le trésorier de
-                            Rennes
-                            lui cède. Quelques résidences seigneuriales de la commune sont construites au XIIIe siècle ;
-                            parmi
-                            elles, le Plessis-Cintré et Bintin qui s’étend en partie sur Talensac. En 1245, Alain de
-                            Verrière,
-                            un seigneur de la paroisse du Rheu, épouse la fille unique de Philippe, seigneur du
-                            Plessis-Cintré ;
-                            celui-ci devient seigneur de Cintré. Les blasons des Huchet de Cintré sont gravés dans la
-                            pierre de
-                            l’église et peints au niveau du chœur. Le premier des Bintin, Geoffroy, était sénéchal de
-                            Rennes en
-                            1275. En 1371, Jean et Geoffroy de Bintin étaient écuyers dans une compagnie commandée par
-                            Du Gesclin.</p>
-                        <p class="align-justify">En 1379, Thomas et Guillaume de Bintin fondent l’association pour la
-                            défense du duché de Bretagne à
-                            laquelle adhère Jehan du Boberil. Le domaine de Bintin acquiert le bois de Talensac par
-                            mariage ; les
-                            deux seigneuries restent réunies jusqu’en 1589. Les moines de Saint-Melaine quittent Cintré
-                            vers 1270
-                            et cèdent le prieuré un siècle plus tard en 1370, avec le quart des dîmes recueillies sur la
-                            commune.
-                            Un partie de ces dîmes a été donnée à Saint-Melaine par un prêtre.</p>
-                        <p class="align-justify">L’abbaye conserve peu de choses à Cintré lorsque le prieuré s’éteint en
-                            1411. Les anciens manoirs du
-                            Plessis et de Bintin possèdent tous deux un droit de haute justice. Celui de Bintin, muni
-                            d’une
-                            chapelle, relève du roi.</p>
-                    </div>
-                </div>
-            </div>
+	<div class="colGauche">
+		<div class="col_centre" id="contentCentre"><h1>Histoire de Cintré</h1>
+			<div id="c1613">
+				<div class="ce-textpic ce-left ce-intext">
+					<div class="ce-gallery" data-ce-columns="1" data-ce-images="1">
+						<div class="ce-row">
+							<div class="ce-column">
+								<figure role="group"><img
+										src="img/Eglise_cintre.jpg" alt="">
+									<figcaption><span class="no_in_screen">Photo</span>Cintré, Ville d'Histoire
+									</figcaption>
+								</figure>
+							</div>
+						</div>
+					</div>
+					<div class="ce-bodytext">
+						<p class="chapeau text_bleu"><b>Une commune à vivre enracinnée dans son hisoire...</b></p>
+						<p class="align-justify">Cintré est un prieuré qui appartient à l’abbaye Saint Melaine de Rennes
+							en
+							1152. L’Ecclésia de Cintreyo est citée par le pape Luce III en 1185 pour confirmer cette
+							possession.</p>
+						<p class="align-justify">En 1230, l’abbé de Saint-Melaine échange l’église de Cintré et la
+							chapelle
+							Notre-Dame de Mordelles au parc du Pressoir, contre l’église de Melesse que le trésorier de
+							Rennes
+							lui cède. Quelques résidences seigneuriales de la commune sont construites au XIIIe siècle ;
+							parmi
+							elles, le Plessis-Cintré et Bintin qui s’étend en partie sur Talensac. En 1245, Alain de
+							Verrière,
+							un seigneur de la paroisse du Rheu, épouse la fille unique de Philippe, seigneur du
+							Plessis-Cintré ;
+							celui-ci devient seigneur de Cintré. Les blasons des Huchet de Cintré sont gravés dans la
+							pierre de
+							l’église et peints au niveau du chœur. Le premier des Bintin, Geoffroy, était sénéchal de
+							Rennes en
+							1275. En 1371, Jean et Geoffroy de Bintin étaient écuyers dans une compagnie commandée par
+							Du Gesclin.</p>
+						<p class="align-justify">En 1379, Thomas et Guillaume de Bintin fondent l’association pour la
+							défense du duché de Bretagne à
+							laquelle adhère Jehan du Boberil. Le domaine de Bintin acquiert le bois de Talensac par
+							mariage ; les
+							deux seigneuries restent réunies jusqu’en 1589. Les moines de Saint-Melaine quittent Cintré
+							vers 1270
+							et cèdent le prieuré un siècle plus tard en 1370, avec le quart des dîmes recueillies sur la
+							commune.
+							Un partie de ces dîmes a été donnée à Saint-Melaine par un prêtre.</p>
+						<p class="align-justify">L’abbaye conserve peu de choses à Cintré lorsque le prieuré s’éteint en
+							1411. Les anciens manoirs du
+							Plessis et de Bintin possèdent tous deux un droit de haute justice. Celui de Bintin, muni
+							d’une
+							chapelle, relève du roi.</p>
+					</div>
+				</div>
+			</div>
 
-            <br><br><br>
+			<br><br><br>
 
-            <div class="grid5050 clear">
-                <div class="bloc50">
-                    <div id="c1614">
-                        <div class="ce-textpic ce-right ce-intext">
-                            <div class="ce-gallery" data-ce-columns="1" data-ce-images="1">
-                                <div class="ce-row">
-                                    <div class="ce-column">
-                                        <div class="ce-media"><img
-                                                src="img/Geolocalisation-2.png" alt=""></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ce-bodytext"><p class="chapeau text_bleu"><b>Localisation de la commune de
-                                Cintré</b></p>
-                                <p class="align-justify">
-                                    A l’ouest du bassin de Rennes, Cintré garde une forte caractéristique rurale, mais
-                                    n’est plus majoritairement agricole. La vie au grand air : la nature, les chemins
-                                    creux, le bocage et les pommiers constituent toujours le paysage.
-                                </p>
-                                <p class="align-justify">
-                                    La ville est toute proche. En moins de 15 minutes, nous sommes à Rennes par une
-                                    route directe et
-                                    facile. En 5 minutes nous arrivons au Rheu, l’Hermitage ou Mordelles, avec un accès
-                                    rapide sur la
-                                    deuxième ceinture de Rennes. Pour aller aux collèges ou aux lycées, pas de perte de
-                                    temps.
-                                </p>
-                                <p class="align-justify">
-                                    Cintré est une des 43 communes de Rennes-Métropole ; elle fait partie de la
-                                    Communauté d’Agglomération
-                                    de Rennes depuis l’origine (anciennement ’’ district ‘’).
-                                </p>
-                                <p class="align-justify">
-                                    Avec ses 2209 habitants, notre commune s’engage activement dans le nouveau P.L.H.
-                                    (programme local
-                                    d’habitat) tout en souhaitant préserver son cadre de vie et son identité.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bloc50">
-                    <aside class="col-md-4">
-                        <div class="bloc-type-2 light-border bloc-acces open">
-                            <h3 tabindex="0">Accès rapide<span class="bloc-toggle"></span></h3>
-                            <ul class="acces-rapide-left">
-                                <li>
-                                    <a href="https://lannuaire.service-public.fr/bretagne/ille-et-vilaine/mairie-35080-01"
-                                       title="Annuaire des services">
-                                        <div class="img-wrapper">
-                                            <img src="./img/1394221c915875c0bbcc0c55a2a5d69e.svg" alt="icon-1">
-                                        </div>
-                                        <span>Annuaire des services</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://www.ville-cintre.fr/location-de-salle.asp"
-                                       title="Annuaire des équipements">
-                                        <div class="img-wrapper">
-                                            <img src="./img/4af02370b6fa8386def93639bc3b8f59.svg" alt="icon-2">
-                                        </div>
-                                        <span>Annuaire des équipements</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://www.ville-cintre.fr/associations.asp"
-                                       title="Sports">
-                                        <div class="img-wrapper">
-                                            <img src="./img/b657274128e127e9b3e4f8f09bbcf733.svg" alt="icon-3">
-                                        </div>
-                                        <span>Sports</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="contact.html" title="Nous contacter">
-                                        <div class="img-wrapper">
-                                            <img src="./img/c79082a088a3e63a16845391e7af88d2.svg" alt="icon-4">
-                                        </div>
-                                        <span>Nous contacter</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://www.ville-cintre.fr/environnement.asp"
-                                       title="Déchèteries">
-                                        <div class="img-wrapper">
-                                            <img src="./img/05a018b9e660842f6a5a5d043c094776.svg" alt="icon-5">
-                                        </div>
-                                        <span>Environnement</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://www.ville-cintre.fr/commerces.asp"
-                                       target="_blank" title="Jours de collecte">
-                                        <div class="img-wrapper">
-                                            <img src="./img/f548428bbdbc6b029f2ab9e934229da3.svg" alt="icon-6">
-                                        </div>
-                                        <span>Commerces</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://dechets.rennesmetropole.fr/"
-                                       title="Collectes sélectives">
-                                        <div class="img-wrapper">
-                                            <img src="./img/95c952d9ef1d95c58c246e7efd0c03bc.svg" alt="icon-7">
-                                        </div>
-                                        <span>Collectes sélectives</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://www.ville-cintre.fr/point-accueil-emploi.asp"
-                                       title="L'agglomération recrute">
-                                        <div class="img-wrapper">
-                                            <img src="./img/696353eb0037596a640d02a6cbb14cd2.svg" alt="icon-8">
-                                        </div>
-                                        <span>L'agglomération recrute</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://www.ville-cintre.fr/marchands-ambulants.asp"
-                                       title="Marchés publics">
-                                        <div class="img-wrapper">
-                                            <img src="./img/74a7c91e04ef6e47edafd0f3eab0fc25.svg" alt="icon-9">
-                                        </div>
-                                        <span>Marchés publics</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </aside>
-                </div>
-            </div>
-        </div>
-    </div>
+			<div class="grid5050 clear">
+				<div class="bloc50">
+					<div id="c1614">
+						<div class="ce-textpic ce-right ce-intext">
+							<div class="ce-gallery" data-ce-columns="1" data-ce-images="1">
+								<div class="ce-row">
+									<div class="ce-column">
+										<div class="ce-media"><img
+												src="img/Geolocalisation-2.png" alt=""></div>
+									</div>
+								</div>
+							</div>
+							<div class="ce-bodytext"><p class="chapeau text_bleu"><b>Localisation de la commune de
+								Cintré</b></p>
+								<p class="align-justify">
+									A l’ouest du bassin de Rennes, Cintré garde une forte caractéristique rurale, mais
+									n’est plus majoritairement agricole. La vie au grand air : la nature, les chemins
+									creux, le bocage et les pommiers constituent toujours le paysage.
+								</p>
+								<p class="align-justify">
+									La ville est toute proche. En moins de 15 minutes, nous sommes à Rennes par une
+									route directe et
+									facile. En 5 minutes nous arrivons au Rheu, l’Hermitage ou Mordelles, avec un accès
+									rapide sur la
+									deuxième ceinture de Rennes. Pour aller aux collèges ou aux lycées, pas de perte de
+									temps.
+								</p>
+								<p class="align-justify">
+									Cintré est une des 43 communes de Rennes-Métropole ; elle fait partie de la
+									Communauté d’Agglomération
+									de Rennes depuis l’origine (anciennement ’’ district ‘’).
+								</p>
+								<p class="align-justify">
+									Avec ses 2209 habitants, notre commune s’engage activement dans le nouveau P.L.H.
+									(programme local
+									d’habitat) tout en souhaitant préserver son cadre de vie et son identité.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bloc50">
+					<aside class="col-md-4">
+						<div class="bloc-type-2 light-border bloc-acces open">
+							<h3 tabindex="0">Accès rapide<span class="bloc-toggle"></span></h3>
+							<ul class="acces-rapide-left">
+								<li>
+									<a href="https://lannuaire.service-public.fr/bretagne/ille-et-vilaine/mairie-35080-01"
+									   title="Annuaire des services">
+										<div class="img-wrapper">
+											<img src="./img/1394221c915875c0bbcc0c55a2a5d69e.svg" alt="icon-1">
+										</div>
+										<span>Annuaire des services</span>
+									</a>
+								</li>
+								<li>
+									<a href="http://www.ville-cintre.fr/location-de-salle.asp"
+									   title="Annuaire des équipements">
+										<div class="img-wrapper">
+											<img src="./img/4af02370b6fa8386def93639bc3b8f59.svg" alt="icon-2">
+										</div>
+										<span>Annuaire des équipements</span>
+									</a>
+								</li>
+								<li>
+									<a href="http://www.ville-cintre.fr/associations.asp"
+									   title="Sports">
+										<div class="img-wrapper">
+											<img src="./img/b657274128e127e9b3e4f8f09bbcf733.svg" alt="icon-3">
+										</div>
+										<span>Sports</span>
+									</a>
+								</li>
+								<li>
+									<a href="contact.html" title="Nous contacter">
+										<div class="img-wrapper">
+											<img src="./img/c79082a088a3e63a16845391e7af88d2.svg" alt="icon-4">
+										</div>
+										<span>Nous contacter</span>
+									</a>
+								</li>
+								<li>
+									<a href="http://www.ville-cintre.fr/environnement.asp"
+									   title="Déchèteries">
+										<div class="img-wrapper">
+											<img src="./img/05a018b9e660842f6a5a5d043c094776.svg" alt="icon-5">
+										</div>
+										<span>Environnement</span>
+									</a>
+								</li>
+								<li>
+									<a href="http://www.ville-cintre.fr/commerces.asp"
+									   target="_blank" title="Jours de collecte">
+										<div class="img-wrapper">
+											<img src="./img/f548428bbdbc6b029f2ab9e934229da3.svg" alt="icon-6">
+										</div>
+										<span>Commerces</span>
+									</a>
+								</li>
+								<li>
+									<a href="http://dechets.rennesmetropole.fr/"
+									   title="Collectes sélectives">
+										<div class="img-wrapper">
+											<img src="./img/95c952d9ef1d95c58c246e7efd0c03bc.svg" alt="icon-7">
+										</div>
+										<span>Collectes sélectives</span>
+									</a>
+								</li>
+								<li>
+									<a href="http://www.ville-cintre.fr/point-accueil-emploi.asp"
+									   title="L'agglomération recrute">
+										<div class="img-wrapper">
+											<img src="./img/696353eb0037596a640d02a6cbb14cd2.svg" alt="icon-8">
+										</div>
+										<span>L'agglomération recrute</span>
+									</a>
+								</li>
+								<li>
+									<a href="http://www.ville-cintre.fr/marchands-ambulants.asp"
+									   title="Marchés publics">
+										<div class="img-wrapper">
+											<img src="./img/74a7c91e04ef6e47edafd0f3eab0fc25.svg" alt="icon-9">
+										</div>
+										<span>Marchés publics</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <br><br><br><br><br>
 
 <div class="hidden floating-buttons">
-    <div class="sharing-content ">
-        <label class="button-sharing " title="Suivez le compte Facebook de Cintré">
-            <a class="button-sharing_button" href="https://www.facebook.com/"
-               target="_blank">
-                <img src="img/facebook.png"
-                     class="img  button-sharing_image"
-                     alt="Suivez le compte Facebook de Cintré"
-                     title="Facebook de Cintré">
-            </a>
-            <span class="button-sharing_label">Suivez le compte Facebook de Cintré</span>
-        </label>
-        <label class="button-sharing " title="Le fil d&#039;actu de Cintré">
-            <a class="button-sharing_button" href="https://twitter.com/" target="_blank">
-                <img src="img/twitter.png"
-                     class="img  button-sharing_image"
-                     alt="Le fil d&#039;actu Cintré" title="Twitter">
-            </a>
-            <span class="button-sharing_label">Le fil d&#039;actu de Cintré</span>
-        </label>
-        <label class="button-sharing " title="Instagram">
-            <a class="button-sharing_button" href="https://www.instagram.com/"
-               target="_blank">
-                <img src="img/instagram.png"
-                     class="img  button-sharing_image" alt="" title="Instagram">
-            </a>
-            <span class="button-sharing_label">Instagram</span>
-        </label>
+	<div class="sharing-content ">
+		<label class="button-sharing " title="Suivez le compte Facebook de Cintré">
+			<a class="button-sharing_button" href="https://www.facebook.com/"
+			   target="_blank">
+				<img src="img/facebook.png"
+					 class="img  button-sharing_image"
+					 alt="Suivez le compte Facebook de Cintré"
+					 title="Facebook de Cintré">
+			</a>
+			<span class="button-sharing_label">Suivez le compte Facebook de Cintré</span>
+		</label>
+		<label class="button-sharing " title="Le fil d&#039;actu de Cintré">
+			<a class="button-sharing_button" href="https://twitter.com/" target="_blank">
+				<img src="img/twitter.png"
+					 class="img  button-sharing_image"
+					 alt="Le fil d&#039;actu Cintré" title="Twitter">
+			</a>
+			<span class="button-sharing_label">Le fil d&#039;actu de Cintré</span>
+		</label>
+		<label class="button-sharing " title="Instagram">
+			<a class="button-sharing_button" href="https://www.instagram.com/"
+			   target="_blank">
+				<img src="img/instagram.png"
+					 class="img  button-sharing_image" alt="" title="Instagram">
+			</a>
+			<span class="button-sharing_label">Instagram</span>
+		</label>
 
-        <label class="button-sharing" id="top_button" style="margin: 25px 0;" title="Haut de page">
-            <a class="button-sharing_button">
-                <i class="button-sharing_icon ui-icon dark icon-arrow-up"
-                   style="  transform: scale(2);" aria-hidden="true"></i>
-            </a>
-            <span class="button-sharing_label">Haut de page</span>
-        </label>
+		<label class="button-sharing" id="top_button" style="margin: 25px 0;" title="Haut de page">
+			<a class="button-sharing_button">
+				<i class="button-sharing_icon ui-icon dark icon-arrow-up"
+				   style="  transform: scale(2);" aria-hidden="true"></i>
+			</a>
+			<span class="button-sharing_label">Haut de page</span>
+		</label>
 
-    </div>
+	</div>
 </div>
 <footer id="footer" class="region-footer " role="contentinfo">
-    <div class="block-footer trunk">
-        <div class="block-footer_left">
-            <a href="/" class="link-img " title="Ville de Cintré">
-                <img src="img/Cintre_logo.png"
-                     class="img " alt="Ville de Cintré" title="">
-            </a>
-            <a href="https://metropole.rennes.fr/" class="link-img " title="Rennes Métropole">
-                <img src="img/logo-rm-white_0.png"
-                     class="img " alt="Rennes Métropole" title="">
-            </a>
-            <a href="http://www.europe-en-france.gouv.fr/" class="link-img " title="Europe">
-                <img src="img/FEDER_new.png" class="img "
-                     alt="Logo FEDER" title="FEDER - Fond Européen">
-            </a>
-        </div>
+	<div class="block-footer trunk">
+		<div class="block-footer_left">
+			<a href="/" class="link-img " title="Ville de Cintré">
+				<img src="img/Cintre_logo.png"
+					 class="img " alt="Ville de Cintré" title="">
+			</a>
+			<a href="https://metropole.rennes.fr/" class="link-img " title="Rennes Métropole">
+				<img src="img/logo-rm-white_0.png"
+					 class="img " alt="Rennes Métropole" title="">
+			</a>
+			<a href="http://www.europe-en-france.gouv.fr/" class="link-img " title="Europe">
+				<img src="img/FEDER_new.png" class="img "
+					 alt="Logo FEDER" title="FEDER - Fond Européen">
+			</a>
+		</div>
 
-        <div class="block-footer_right">
-            <div class="grid grid--table grid--break-m">
-                <div class="grid_col grid_col-6">
-                    <div class="block-footer_links">
-                        <div class="menu-icons">
-                            <a href="https://www.facebook.com/" class="icon-image floating-link"
-                               title="Facebook Cintré"
-                               style="background-image: url(img/facebook.png);">Facebook</a>
-                            <a href="https://twitter.com/" class="icon-image floating-link"
-                               title="Twitter Cintré"
-                               style="background-image: url(img/twitter.png);">Twitter</a>
-                            <a href="https://www.instagram.com/" class="icon-image floating-link"
-                               title="Instagram Cintré"
-                               style="background-image: url(img/instagram.png);">Instagram</a>
-                            <a href="https://www.pinterest.fr/" class="icon-image " title="Pinterest Cintré"
-                               style="background-image: url(img/pinterest.png);">Pinterest</a>
-                            <a href="https://www.linkedin.com/" class="icon-image "
-                               title="LinkedIn Cintré"
-                               style="background-image: url(img/linkedin.png);">LinkedIn</a>
-                            <a href="https://www.youtube.com/" class="icon-image "
-                               title="YouTube Cintré"
-                               style="background-image: url(img/youtube.png);">YouTube</a>
-                        </div>
-                        <div class="menu-footer-links">
-                            <a href="/accessibilite"
-                               class="link link--white link--border-only-hover">
-                                <span class="link_label">Accessibilité</span>
-                            </a>
+		<div class="block-footer_right">
+			<div class="grid grid--table grid--break-m">
+				<div class="grid_col grid_col-6">
+					<div class="block-footer_links">
+						<div class="menu-icons">
+							<a href="https://www.facebook.com/" class="icon-image floating-link"
+							   title="Facebook Cintré"
+							   style="background-image: url(img/facebook.png);">Facebook</a>
+							<a href="https://twitter.com/" class="icon-image floating-link"
+							   title="Twitter Cintré"
+							   style="background-image: url(img/twitter.png);">Twitter</a>
+							<a href="https://www.instagram.com/" class="icon-image floating-link"
+							   title="Instagram Cintré"
+							   style="background-image: url(img/instagram.png);">Instagram</a>
+							<a href="https://www.pinterest.fr/" class="icon-image " title="Pinterest Cintré"
+							   style="background-image: url(img/pinterest.png);">Pinterest</a>
+							<a href="https://www.linkedin.com/" class="icon-image "
+							   title="LinkedIn Cintré"
+							   style="background-image: url(img/linkedin.png);">LinkedIn</a>
+							<a href="https://www.youtube.com/" class="icon-image "
+							   title="YouTube Cintré"
+							   style="background-image: url(img/youtube.png);">YouTube</a>
+						</div>
+						<div class="menu-footer-links">
+							<a href="/accessibilite"
+							   class="link link--white link--border-only-hover">
+								<span class="link_label">Accessibilité</span>
+							</a>
 
-                            <a href="/mentions-legales"
-                               class="link link--white link--border-only-hover">
-                                <span class="link_label">Mentions légales</span>
-                            </a>
+							<a href="/mentions-legales"
+							   class="link link--white link--border-only-hover">
+								<span class="link_label">Mentions légales</span>
+							</a>
 
-                            <a href="/flux-rss"
-                               class="link link--white link--border-only-hover">
-                                <span class="link_label">Flux RSS</span>
-                            </a>
+							<a href="/flux-rss"
+							   class="link link--white link--border-only-hover">
+								<span class="link_label">Flux RSS</span>
+							</a>
 
-                            <a href="contact.html"
-                               class="link link--white link--border-only-hover">
-                                <span class="link_label">Nous contacter</span>
-                            </a>
+							<a href="contact.html"
+							   class="link link--white link--border-only-hover">
+								<span class="link_label">Nous contacter</span>
+							</a>
 
-                            <a href="/plan-du-site"
-                               class="link link--white link--border-only-hover">
-                                <span class="link_label">Espace presse</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+							<a href="/plan-du-site"
+							   class="link link--white link--border-only-hover">
+								<span class="link_label">Espace presse</span>
+							</a>
+						</div>
+					</div>
+				</div>
 
-                <div class="grid_col grid_col-6">
-                    <div class="block-address">
-                        <div class="block-address_item">
-                            <a href="/contact"
-                               class="link block-address_title link--no-border a-block">
-                                <span class="link_label">Mairie de Cintré</span>
-                            </a>
-                            <div class="block-address_information">
-                                Hôtel de ville<br/>
-                                7 place Chêne Vert<br/>
-                                35310 CINTRÉ Cedex
-                            </div>
-                            <div class="block-address_telephone">
-                                Tel: 02 99 64 16 31
-                            </div>
-                        </div>
-                        <div class="block-address_item">
-                            <a href="/contact"
-                               class="link block-address_title link--no-border a-block">
-                                <span class="link_label">Rennes Métropole</span>
-                            </a>
-                            <div class="block-address_information">
-                                Hôtel de Rennes Métropole<br/>
-                                4 avenue Henri Fréville<br/>
-                                CS 93111<br/>
-                                35031 Rennes Cedex
-                            </div>
-                            <div class="block-address_telephone">
-                                Tel: 02 99 86 60 60
-                            </div>
-                        </div>
-                    </div>
-                </div>
+				<div class="grid_col grid_col-6">
+					<div class="block-address">
+						<div class="block-address_item">
+							<a href="/contact"
+							   class="link block-address_title link--no-border a-block">
+								<span class="link_label">Mairie de Cintré</span>
+							</a>
+							<div class="block-address_information">
+								Hôtel de ville<br/>
+								7 place Chêne Vert<br/>
+								35310 CINTRÉ Cedex
+							</div>
+							<div class="block-address_telephone">
+								Tel: 02 99 64 16 31
+							</div>
+						</div>
+						<div class="block-address_item">
+							<a href="/contact"
+							   class="link block-address_title link--no-border a-block">
+								<span class="link_label">Rennes Métropole</span>
+							</a>
+							<div class="block-address_information">
+								Hôtel de Rennes Métropole<br/>
+								4 avenue Henri Fréville<br/>
+								CS 93111<br/>
+								35031 Rennes Cedex
+							</div>
+							<div class="block-address_telephone">
+								Tel: 02 99 86 60 60
+							</div>
+						</div>
+					</div>
+				</div>
 
-            </div>
+			</div>
 
-        </div>
+		</div>
 
-    </div>
+	</div>
 
 </footer>
 
